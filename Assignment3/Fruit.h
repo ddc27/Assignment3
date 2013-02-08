@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSString * color;
 @property (nonatomic, strong) NSString * url;
 
--initWithWithName:(NSString *) inName andColor:(NSString *) inColor andShape:(NSString *) inShape;
+-initWithName:(NSString *) inName andColor:(NSString *) inColor andShape:(NSString *) inShape;
 
 -(NSString *) description;
 

@@ -10,13 +10,13 @@ Interface Builder play...
 
 You’re going to read the provided source and provide a User Interface as well as some light code to make it work. 
 
-1. We want a table view that initially shows 50 bananas, 
+X1. We want a table view that initially shows 50 bananas, 
 2. Shows the wikipedia entry for banana when we select one of the bananas in the table 
-3. Has a button to add all the checkmarks and remove them 
-4. A button to clear all the fruit out of the cart
-5. A button to repopulate all the fruit in the cart.
+X3. Has a button to add all the checkmarks and remove them 
+X4. A button to clear all the fruit out of the cart
+X5. A button to repopulate all the fruit in the cart.
 
-Bonus: 
+XBonus: 
 Can you enable/disable the buttons based on the state? For example: disable the “Add Fruit” button when there is already fruit, and enable it only when there is none. Also the inverse for “Remove Fruit”.
 
 Follow along with our slides thus far, in particular, Feb 5th’s slides.

@@ -16,16 +16,7 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    self.title = @"Bluth's Banana Stand";
-    
-    _allSelected = NO;
-    
-    _cart = [NSMutableArray arrayWithCapacity:0];
-    
+void populateCart(id anyObject){
     for(int i = 0; i < 50; i++){
         NSString * fruitName = [NSString stringWithFormat:@"Banana %d", i];
         
@@ -33,12 +24,22 @@
             fruitName = [NSString stringWithFormat:@"Free Banana %d", i];
         }
         
-        Fruit * anonFruit = [[Fruit alloc] initWithWithName:fruitName andColor:@"Yellow" andShape:@"Curved"];
+        Fruit * anonFruit = [[Fruit alloc] initWithName:fruitName andColor:@"Yellow" andShape:@"Curved"];
         anonFruit.url = @"http://en.m.wikipedia.org/wiki/Banana";
-        [_cart addObject:anonFruit];
+        [anyObject addObject:anonFruit];
     }
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
     
+    self.title = @"Dan's Banana Stand";
     
+    _allSelected = NO;
+    _cart = [NSMutableArray arrayWithCapacity:0];
+    populateCart(_cart);
+    _fill.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,23 +55,33 @@
 {
     _allSelected = !_allSelected;
     if(_allSelected){
-        [_selectAll setTitle:@"Select None" forState:UIControlStateNormal];
+        [_select setTitle:@"Select None" forState:UIControlStateNormal];
     } else {
-        [_selectAll setTitle:@"Select All" forState:UIControlStateNormal];
+        [_select setTitle:@"Select All" forState:UIControlStateNormal];
     }
     [_cartView reloadData];
 }
 
 //Should remove all of the fruit in the cart.
--(IBAction)removeAllFruitInCart:(id)sender
+-(IBAction)emptyCart:(id)sender
 {
-    
+    [_cart removeAllObjects];
+    _allSelected = NO;
+    [_select setTitle:@"Select All" forState:UIControlStateNormal];
+    _select.hidden = YES;
+    _empty.hidden = YES;
+    _fill.hidden = NO;
+    [_cartView reloadData];
 }
 
 //should add 50 bananas to the cart and display them!
--(IBAction)fillCartWithBananas:(id)sender
+-(IBAction)fillCart:(id)sender
 {
-    
+    populateCart(_cart);
+    _select.hidden = NO;
+    _empty.hidden = NO;
+    _fill.hidden = YES;
+    [_cartView reloadData];
 }
 
 
