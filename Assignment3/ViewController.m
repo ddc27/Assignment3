@@ -115,6 +115,7 @@ void populateCart(id anyObject){
     
     if([_cart count] == 0){
         cell.textLabel.text = @"No Fruit in Cart";
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
         cell.detailTextLabel.text = @"";
         
     } else {
