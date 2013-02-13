@@ -99,6 +99,10 @@ void populateCart(id anyObject){
 
 -(int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    if([_cart count] == 0){
+        return 1;
+    }
+    
     return [_cart count];
 }
 
