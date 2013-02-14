@@ -135,9 +135,13 @@ void populateCart(id anyObject){
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Fruit * selectedFruit = [_cart objectAtIndex:indexPath.row];
-    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if(!_cart.count) {
+        return;
+    }
+    
+    Fruit * selectedFruit = [_cart objectAtIndex:indexPath.row];
     
     Assignment3DetailViewController * detailView = [[Assignment3DetailViewController alloc] initWithNibName:@"Assignment3DetailViewController" bundle:nil];
     
