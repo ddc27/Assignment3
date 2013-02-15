@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-void populateCart(id anyObject){
+-(void)populateCart:(id) anyObject{
     for(int i = 0; i < 50; i++){
         NSString * fruitName = [NSString stringWithFormat:@"Banana %d", i];
         
@@ -38,7 +38,7 @@ void populateCart(id anyObject){
     
     _allSelected = NO;
     _cart = [NSMutableArray arrayWithCapacity:0];
-    populateCart(_cart);
+    [self populateCart:_cart];
     _fill.hidden = YES;
 }
 
@@ -77,7 +77,7 @@ void populateCart(id anyObject){
 //should add 50 bananas to the cart and display them!
 -(IBAction)fillCart:(id)sender
 {
-    populateCart(_cart);
+    [self populateCart:_cart];
     _select.hidden = NO;
     _empty.hidden = NO;
     _fill.hidden = YES;

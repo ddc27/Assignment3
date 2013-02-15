@@ -18,9 +18,4 @@
     return self;
 }
 
--(NSString *) description
-{
-    return _name;
-}
-
 @end

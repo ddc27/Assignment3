@@ -20,7 +20,7 @@
 		5573857616C1467B002C56F2 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5573857416C1467B002C56F2 /* ViewController.xib */; };
 		5573858216C148B2002C56F2 /* Assignment3DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573858016C148B2002C56F2 /* Assignment3DetailViewController.m */; };
 		5573858316C148B2002C56F2 /* Assignment3DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5573858116C148B2002C56F2 /* Assignment3DetailViewController.xib */; };
-		5573858E16C14A44002C56F2 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5573858B16C14A44002C56F2 /* Fruit.m */; };
+		CE4A5A3416CDFFF400B7D9E8 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A5A3316CDFFF400B7D9E8 /* Fruit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,8 @@
 		5573857F16C148B2002C56F2 /* Assignment3DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assignment3DetailViewController.h; sourceTree = "<group>"; };
 		5573858016C148B2002C56F2 /* Assignment3DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assignment3DetailViewController.m; sourceTree = "<group>"; };
 		5573858116C148B2002C56F2 /* Assignment3DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Assignment3DetailViewController.xib; sourceTree = "<group>"; };
-		5573858A16C14A44002C56F2 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
-		5573858B16C14A44002C56F2 /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		CE4A5A3216CDFFF400B7D9E8 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		CE4A5A3316CDFFF400B7D9E8 /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +138,8 @@
 		5573858F16C14A49002C56F2 /* Fruit */ = {
 			isa = PBXGroup;
 			children = (
-				5573858A16C14A44002C56F2 /* Fruit.h */,
-				5573858B16C14A44002C56F2 /* Fruit.m */,
+				CE4A5A3216CDFFF400B7D9E8 /* Fruit.h */,
+				CE4A5A3316CDFFF400B7D9E8 /* Fruit.m */,
 			);
 			name = Fruit;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 				5573856A16C1467B002C56F2 /* AppDelegate.m in Sources */,
 				5573857316C1467B002C56F2 /* ViewController.m in Sources */,
 				5573858216C148B2002C56F2 /* Assignment3DetailViewController.m in Sources */,
-				5573858E16C14A44002C56F2 /* Fruit.m in Sources */,
+				CE4A5A3416CDFFF400B7D9E8 /* Fruit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

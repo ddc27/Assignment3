@@ -17,6 +17,4 @@
 
 -initWithName:(NSString *) inName andColor:(NSString *) inColor andShape:(NSString *) inShape;
 
--(NSString *) description;
-
 @end
